@@ -24,9 +24,9 @@ jobs:
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
 
-    - run: npm install
+    - run: yarn
 
-    - run: npm test
+    - run: yarn test
       env:
         CI: true
         JWT_LIFETIME: 1
