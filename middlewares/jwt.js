@@ -15,7 +15,6 @@ const createJWT = ({ payload, options }) => {
 
 const isValidToken = (token) =>
   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
-
 // cookie, token
 
 const sendResponseWithCookie = ({ res, statusCode, user, options }) => {

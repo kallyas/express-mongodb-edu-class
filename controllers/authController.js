@@ -26,6 +26,7 @@ const register = async (req, res) => {
       id: result._id,
       name: result.name,
       email: result.email,
+      role: result.role,
     },
     options: { expiresIn: "1h" },
   });
@@ -49,6 +50,7 @@ const login = async (req, res) => {
       id: user._id,
       name: user.name,
       email: user.email,
+      role: user.role,
     },
     options: { expiresIn: "1h" },
   })
